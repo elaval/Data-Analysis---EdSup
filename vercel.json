@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run docs:build",
   "outputDirectory": "docs/.observable/dist",
-  "installCommand": "dnf install -y libstdc++ && npm install",
+  "installCommand": "dnf install -y gcc14-c++ 2>&1 | grep -v 'warning' || true && npm install",
   "framework": null
 }
