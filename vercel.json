@@ -1,5 +1,11 @@
 {
   "buildCommand": "npm run docs:build",
   "outputDirectory": "docs/.observable/dist",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "framework": null,
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--no-warnings"
+    }
+  }
 }
