@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm run docs:build",
   "outputDirectory": "docs/.observable/dist",
-  "installCommand": "npm install",
-  "framework": null,
-  "buildImage": "al2023"
+  "installCommand": "dnf install -y libstdc++ && npm install",
+  "framework": null
 }
