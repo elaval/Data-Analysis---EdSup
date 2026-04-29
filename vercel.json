@@ -3,9 +3,5 @@
   "outputDirectory": "docs/.observable/dist",
   "installCommand": "npm install",
   "framework": null,
-  "build": {
-    "env": {
-      "NODE_OPTIONS": "--no-warnings"
-    }
-  }
+  "buildImage": "al2023"
 }
