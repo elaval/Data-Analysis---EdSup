@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run docs:build",
+  "outputDirectory": "docs/.observable/dist",
+  "installCommand": "npm install"
+}

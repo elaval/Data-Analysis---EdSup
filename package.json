@@ -4,6 +4,7 @@
   },
   "scripts": {
     "docs:preview": "notebooks preview --root docs",
-    "docs:build": "notebooks build --root docs -- docs/*.html"
+    "docs:build": "notebooks build --root docs -- docs/*.html",
+    "build": "npm run docs:build"
   }
 }
