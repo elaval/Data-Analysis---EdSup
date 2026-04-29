@@ -570,7 +570,7 @@
     GROUP BY anio, origen, ie
     ORDER BY anio, ie, total_ingresos DESC
   </script>
-  <script id="68" type="text/markdown">
+  <script id="68" type="text/markdown" hidden="">
     ## Data Matricula Pregrado
   </script>
   <script id="14" type="application/sql" hidden="" database="duckdb" output="data_matricula_pregrado">
@@ -622,7 +622,7 @@
     GROUP BY cat_periodo
     ORDER BY cat_periodo)
   </script>
-  <script id="13" type="text/x-typescript">
+  <script id="13" type="text/x-typescript" hidden="">
     (() => {
       const dataPlot = _.chain(data_matricula_pregrado)
         .orderBy(d => d.cat_periodo)
