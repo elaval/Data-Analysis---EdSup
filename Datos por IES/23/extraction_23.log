@@ -1,0 +1,49 @@
+16:14:56  INFO      ============================================================
+16:14:56  INFO      IES extraction  |  cod_inst=23
+16:14:56  INFO      Datasets: ['titulados_es']
+16:14:56  INFO      Output: Datos por IES/23
+16:14:56  INFO      ============================================================
+16:14:56  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+16:14:56  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=23…
+16:14:56  INFO        2007: 6,578 enrollment records, 6,488 unique MRUNs
+16:14:57  INFO        2008: 7,719 enrollment records, 7,616 unique MRUNs
+16:14:57  INFO        2009: 8,801 enrollment records, 8,769 unique MRUNs
+16:14:58  INFO        2010: 8,357 enrollment records, 8,324 unique MRUNs
+16:14:59  INFO        2011: 9,593 enrollment records, 9,580 unique MRUNs
+16:14:59  INFO        2012: 9,822 enrollment records, 9,741 unique MRUNs
+16:15:00  INFO        2013: 10,442 enrollment records, 10,398 unique MRUNs
+16:15:01  INFO        2014: 10,657 enrollment records, 10,615 unique MRUNs
+16:15:02  INFO        2015: 11,086 enrollment records, 11,070 unique MRUNs
+16:15:03  INFO        2016: 12,116 enrollment records, 12,057 unique MRUNs
+16:15:04  INFO        2017: 12,079 enrollment records, 11,948 unique MRUNs
+16:15:05  INFO        2018: 11,639 enrollment records, 11,567 unique MRUNs
+16:15:06  INFO        2019: 12,184 enrollment records, 12,121 unique MRUNs
+16:15:06  INFO        2020: 12,229 enrollment records, 12,153 unique MRUNs
+16:15:07  INFO        2021: 12,813 enrollment records, 12,770 unique MRUNs
+16:15:08  INFO        2022: 12,517 enrollment records, 12,463 unique MRUNs
+16:15:09  INFO        2023: 13,095 enrollment records, 13,054 unique MRUNs
+16:15:10  INFO        2024: 12,933 enrollment records, 12,871 unique MRUNs
+16:15:11  INFO        2025: 14,038 enrollment records, 13,895 unique MRUNs
+16:15:11  INFO      Total unique students: 64,802
+16:15:11  INFO      Institution: UNIVERSIDAD ADOLFO IBAÑEZ
+16:15:11  INFO      Student list saved → Estudiantes_23.parquet (64,802 MRUNs)
+16:15:11  INFO      
+Step 2: titulados_es…
+16:15:12  INFO        2015: 4,469 records
+16:15:13  INFO        2016: 5,177 records
+16:15:13  INFO        2017: 5,137 records
+16:15:14  INFO        2018: 4,493 records
+16:15:14  INFO        2019: 5,258 records
+16:15:15  INFO        2020: 5,355 records
+16:15:15  INFO        2021: 6,374 records
+16:15:16  INFO        2022: 6,154 records
+16:15:17  INFO        2023: 6,345 records
+16:15:18  INFO        → Saved Titulados_ES_23.parquet  (48,762 rows, 1.59 MB)
+16:15:18  INFO      
+============================================================
+16:15:18  INFO      DONE  |  cod_inst=23  (UNIVERSIDAD ADOLFO IBAÑEZ)  |  22.2s
+16:15:18  INFO      Students tracked: 64,802
+16:15:18  INFO        titulados_es                   48,762 records
+16:15:18  INFO      Output: Datos por IES/23
+16:15:18  INFO      ============================================================

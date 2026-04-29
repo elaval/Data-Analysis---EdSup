@@ -1,0 +1,180 @@
+14:15:10  INFO      ============================================================
+14:15:10  INFO      IES extraction  |  cod_inst=31
+14:15:10  INFO      Datasets: ['matricula_escolar', 'matricula_ed_superior', 'nem_jovenes', 'nem_adultos', 'alumnos_sep', 'egresados_em', 'paes', 'titulados_es']
+14:15:10  INFO      Output: Datos por IES/31
+14:15:10  INFO      ============================================================
+14:15:10  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+14:15:10  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=31…
+14:15:10  INFO        2007: 10,374 enrollment records, 10,353 unique MRUNs
+14:15:11  INFO        2008: 12,512 enrollment records, 12,492 unique MRUNs
+14:15:11  INFO        2009: 14,889 enrollment records, 14,889 unique MRUNs
+14:15:12  INFO        2010: 17,494 enrollment records, 17,482 unique MRUNs
+14:15:13  INFO        2011: 19,108 enrollment records, 19,089 unique MRUNs
+14:15:13  INFO        2012: 20,614 enrollment records, 20,607 unique MRUNs
+14:15:14  INFO        2013: 20,732 enrollment records, 20,730 unique MRUNs
+14:15:15  INFO        2014: 20,539 enrollment records, 20,525 unique MRUNs
+14:15:16  INFO        2015: 20,563 enrollment records, 20,563 unique MRUNs
+14:15:17  INFO        2016: 22,236 enrollment records, 22,236 unique MRUNs
+14:15:17  INFO        2017: 23,347 enrollment records, 23,345 unique MRUNs
+14:15:18  INFO        2018: 24,659 enrollment records, 24,658 unique MRUNs
+14:15:19  INFO        2019: 26,966 enrollment records, 26,957 unique MRUNs
+14:15:20  INFO        2020: 27,707 enrollment records, 27,700 unique MRUNs
+14:15:21  INFO        2021: 30,622 enrollment records, 30,617 unique MRUNs
+14:15:22  INFO        2022: 31,349 enrollment records, 31,287 unique MRUNs
+14:15:22  INFO        2023: 31,735 enrollment records, 31,724 unique MRUNs
+14:15:23  INFO        2024: 32,279 enrollment records, 32,270 unique MRUNs
+14:15:24  INFO        2025: 41,899 enrollment records, 41,770 unique MRUNs
+14:15:24  INFO      Total unique students: 124,006
+14:15:24  INFO      Institution: UNIVERSIDAD AUTONOMA DE CHILE
+14:15:24  INFO      Student list saved → Estudiantes_31.parquet (124,006 MRUNs)
+14:15:24  INFO      
+Step 2: matricula_escolar…
+14:15:30  INFO        2004: 66,301 records
+14:15:37  INFO        2005: 69,832 records
+14:15:43  INFO        2006: 72,522 records
+14:15:49  INFO        2007: 73,656 records
+14:15:55  INFO        2008: 74,099 records
+14:16:01  INFO        2009: 74,881 records
+14:16:07  INFO        2010: 73,429 records
+14:16:13  INFO        2011: 70,247 records
+14:16:19  INFO        2012: 65,939 records
+14:16:24  INFO        2013: 61,627 records
+14:16:30  INFO        2014: 56,942 records
+14:16:36  INFO        2015: 52,014 records
+14:16:42  INFO        2016: 46,314 records
+14:16:48  INFO        2017: 40,714 records
+14:16:54  INFO        2018: 34,849 records
+14:17:00  INFO        2019: 29,125 records
+14:17:06  INFO        2020: 23,499 records
+14:17:12  INFO        2021: 18,185 records
+14:17:19  INFO        2022: 12,873 records
+14:17:25  INFO        2023: 7,313 records
+14:17:32  INFO        2024: 2,659 records
+14:17:38  INFO        2025: 7 records
+14:17:49  INFO        → Saved Matricula_Escolar_31.parquet  (1,027,027 rows, 15.19 MB)
+14:17:49  INFO      
+Step 3: matricula_ed_superior…
+14:17:52  INFO        2007: 17,877 records
+14:17:54  INFO        2008: 21,325 records
+14:17:57  INFO        2009: 23,902 records
+14:18:00  INFO        2010: 28,196 records
+14:18:04  INFO        2011: 31,562 records
+14:18:07  INFO        2012: 34,910 records
+14:18:11  INFO        2013: 37,994 records
+14:18:16  INFO        2014: 37,361 records
+14:18:20  INFO        2015: 37,518 records
+14:18:24  INFO        2016: 39,538 records
+14:18:29  INFO        2017: 40,477 records
+14:18:33  INFO        2018: 41,503 records
+14:18:38  INFO        2019: 44,150 records
+14:18:42  INFO        2020: 43,823 records
+14:18:46  INFO        2021: 47,427 records
+14:18:51  INFO        2022: 46,874 records
+14:18:56  INFO        2023: 46,210 records
+14:19:01  INFO        2024: 46,728 records
+14:19:06  INFO        2025: 56,447 records
+14:19:16  INFO        → Saved Matricula_Ed_Superior_31.parquet  (723,822 rows, 27.34 MB)
+14:19:17  INFO      
+Step 4: nem_jovenes…
+14:19:19  INFO        2016_1990: 57,850 records
+14:19:19  INFO        2017: 5,670 records
+14:19:19  INFO        2018: 5,529 records
+14:19:20  INFO        2019: 5,389 records
+14:19:20  INFO        2020: 5,260 records
+14:19:20  INFO        2021: 5,254 records
+14:19:20  INFO        2022: 5,437 records
+14:19:21  INFO        2023: 4,574 records
+14:19:21  INFO        → Saved NEM_y_Percentil_Jovenes_31.parquet  (94,963 rows, 1.18 MB)
+14:19:21  INFO      
+Step 5: nem_adultos…
+14:19:21  INFO        2016_1990: 3,722 records
+14:19:22  INFO        2017: 383 records
+14:19:22  INFO        2018: 404 records
+14:19:22  INFO        2019: 340 records
+14:19:22  INFO        2020: 274 records
+14:19:22  INFO        2021: 160 records
+14:19:22  INFO        2022: 213 records
+14:19:22  INFO        2023: 134 records
+14:19:22  INFO        → Saved NEM_y_Percentil_Adultos_31.parquet  (5,630 rows, 0.08 MB)
+14:19:22  INFO      
+Step 6: alumnos_sep…
+14:19:23  INFO        2008: 6,876 records
+14:19:24  INFO        2009: 15,863 records
+14:19:25  INFO        2010: 16,739 records
+14:19:27  INFO        2011: 18,649 records
+14:19:29  INFO        2012: 30,369 records
+14:19:32  INFO        2013: 36,964 records
+14:19:36  INFO        2014: 33,258 records
+14:19:39  INFO        2015: 29,604 records
+14:19:45  INFO        2016: 40,362 records
+14:19:50  INFO        2017: 32,654 records
+14:19:55  INFO        2018: 31,073 records
+14:20:01  INFO        2019: 29,088 records
+14:20:06  INFO        2020: 24,663 records
+14:20:11  INFO        2021: 19,745 records
+14:20:17  INFO        2022: 15,783 records
+14:20:22  INFO        2023: 11,068 records
+14:20:28  INFO        2024: 6,322 records
+14:20:34  INFO        2025: 2,393 records
+14:20:38  INFO        → Saved Alumnos_SEP_31.parquet  (401,473 rows, 7.70 MB)
+14:20:38  INFO      
+Step 7: egresados_em…
+14:20:39  INFO        2002: 11,195 records
+14:20:40  INFO        2003: 13,859 records
+14:20:42  INFO        2004: 16,186 records
+14:20:43  INFO        2005: 18,922 records
+14:20:44  INFO        2006: 20,498 records
+14:20:45  INFO        2007: 21,381 records
+14:20:47  INFO        2008: 21,366 records
+14:20:48  INFO        2009: 20,734 records
+14:20:49  INFO        2010: 19,926 records
+14:20:50  INFO        2011: 18,259 records
+14:20:52  INFO        2012: 19,518 records
+14:20:53  INFO        2013: 20,691 records
+14:20:54  INFO        2014: 22,051 records
+14:20:55  INFO        2015: 22,875 records
+14:20:56  INFO        2016: 22,730 records
+14:20:57  INFO        2017: 22,560 records
+14:20:59  INFO        2018: 22,055 records
+14:21:00  INFO        2019: 21,720 records
+14:21:01  INFO        2020: 20,809 records
+14:21:03  INFO        2021: 18,050 records
+14:21:04  INFO        2022: 12,862 records
+14:21:04  INFO        2023: 4,800 records
+14:21:05  INFO        2024: 2,693 records
+14:21:06  INFO        → Saved Egresados_EM_31.parquet  (415,740 rows, 5.61 MB)
+14:21:07  INFO      
+Step 8: paes…
+14:21:07  INFO        2021: 10,336 records → puntajes_admision_2021.parquet (0.57 MB)
+14:21:08  INFO        2022: 10,329 records → puntajes_admision_2022.parquet (0.56 MB)
+14:21:09  INFO        2023: 10,621 records → puntajes_admision_2023.parquet (0.71 MB)
+14:21:11  INFO        2024: 10,105 records → puntajes_admision_2024.parquet (0.70 MB)
+14:21:12  INFO        2025: 7,224 records → puntajes_admision_2025.parquet (0.58 MB)
+14:21:12  INFO        → 5 year file(s), 48,615 total rows
+14:21:12  INFO      
+Step 9: titulados_es…
+14:21:13  INFO        2015: 5,067 records
+14:21:13  INFO        2016: 5,457 records
+14:21:14  INFO        2017: 5,714 records
+14:21:14  INFO        2018: 6,178 records
+14:21:15  INFO        2019: 6,349 records
+14:21:16  INFO        2020: 4,885 records
+14:21:16  INFO        2021: 8,717 records
+14:21:17  INFO        2022: 9,726 records
+14:21:18  INFO        2023: 9,489 records
+14:21:18  INFO        → Saved Titulados_ES_31.parquet  (61,582 rows, 2.33 MB)
+14:21:18  INFO      
+============================================================
+14:21:18  INFO      DONE  |  cod_inst=31  (UNIVERSIDAD AUTONOMA DE CHILE)  |  368.4s
+14:21:18  INFO      Students tracked: 124,006
+14:21:18  INFO        matricula_escolar              1,027,027 records
+14:21:18  INFO        matricula_ed_superior          723,822 records
+14:21:18  INFO        nem_jovenes                    94,963 records
+14:21:18  INFO        nem_adultos                    5,630 records
+14:21:18  INFO        alumnos_sep                    401,473 records
+14:21:18  INFO        egresados_em                   415,740 records
+14:21:18  INFO        paes                           48,615 records → 5 year file(s)
+14:21:18  INFO        titulados_es                   61,582 records
+14:21:18  INFO      Output: Datos por IES/31
+14:21:18  INFO      ============================================================

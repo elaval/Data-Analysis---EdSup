@@ -1,0 +1,30 @@
+{
+  "cod_inst": 23,
+  "inst_key": "23",
+  "display_name": "UNIVERSIDAD ADOLFO IBAÑEZ",
+  "extracted_at": "2026-04-27T16:14:56.096391",
+  "elapsed_seconds": 22.2,
+  "students_count": 64802,
+  "output_dir": "Datos por IES/23",
+  "datasets": {
+    "titulados_es": {
+      "record_count": 48762,
+      "files_with_data": 9,
+      "output_file": "Datos por IES/23/Titulados_ES_23.parquet",
+      "output_files": []
+    }
+  },
+  "source_files": {
+    "titulados_es": [
+      "Datos parquet/Titulados ES/titulados_es_2015.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2016.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2017.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2018.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2019.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2020.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2021.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2022.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2023.parquet"
+    ]
+  }
+}

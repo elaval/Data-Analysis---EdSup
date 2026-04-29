@@ -1,0 +1,49 @@
+16:14:05  INFO      ============================================================
+16:14:05  INFO      IES extraction  |  cod_inst=86
+16:14:05  INFO      Datasets: ['titulados_es']
+16:14:05  INFO      Output: Datos por IES/86
+16:14:05  INFO      ============================================================
+16:14:05  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+16:14:05  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=86…
+16:14:06  INFO        2007: 21,456 enrollment records, 21,255 unique MRUNs
+16:14:06  INFO        2008: 23,025 enrollment records, 22,375 unique MRUNs
+16:14:07  INFO        2009: 25,420 enrollment records, 24,759 unique MRUNs
+16:14:07  INFO        2010: 26,103 enrollment records, 25,525 unique MRUNs
+16:14:08  INFO        2011: 26,213 enrollment records, 25,705 unique MRUNs
+16:14:09  INFO        2012: 27,252 enrollment records, 26,719 unique MRUNs
+16:14:09  INFO        2013: 28,172 enrollment records, 27,685 unique MRUNs
+16:14:10  INFO        2014: 29,485 enrollment records, 28,859 unique MRUNs
+16:14:11  INFO        2015: 30,271 enrollment records, 29,705 unique MRUNs
+16:14:12  INFO        2016: 32,876 enrollment records, 32,088 unique MRUNs
+16:14:13  INFO        2017: 31,882 enrollment records, 31,331 unique MRUNs
+16:14:13  INFO        2018: 39,154 enrollment records, 38,592 unique MRUNs
+16:14:14  INFO        2019: 38,672 enrollment records, 38,089 unique MRUNs
+16:14:15  INFO        2020: 37,745 enrollment records, 36,937 unique MRUNs
+16:14:16  INFO        2021: 44,887 enrollment records, 43,934 unique MRUNs
+16:14:17  INFO        2022: 42,912 enrollment records, 42,025 unique MRUNs
+16:14:18  INFO        2023: 43,250 enrollment records, 42,358 unique MRUNs
+16:14:19  INFO        2024: 54,939 enrollment records, 53,371 unique MRUNs
+16:14:20  INFO        2025: 55,727 enrollment records, 54,399 unique MRUNs
+16:14:20  INFO      Total unique students: 193,613
+16:14:20  INFO      Institution: PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+16:14:20  INFO      Student list saved → Estudiantes_86.parquet (193,613 MRUNs)
+16:14:20  INFO      
+Step 2: titulados_es…
+16:14:21  INFO        2015: 10,311 records
+16:14:22  INFO        2016: 10,975 records
+16:14:23  INFO        2017: 13,388 records
+16:14:23  INFO        2018: 16,347 records
+16:14:24  INFO        2019: 15,997 records
+16:14:25  INFO        2020: 13,478 records
+16:14:26  INFO        2021: 15,122 records
+16:14:27  INFO        2022: 21,175 records
+16:14:28  INFO        2023: 19,765 records
+16:14:29  INFO        → Saved Titulados_ES_86.parquet  (136,558 rows, 4.69 MB)
+16:14:29  INFO      
+============================================================
+16:14:29  INFO      DONE  |  cod_inst=86  (PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE)  |  24.1s
+16:14:29  INFO      Students tracked: 193,613
+16:14:29  INFO        titulados_es                   136,558 records
+16:14:29  INFO      Output: Datos por IES/86
+16:14:29  INFO      ============================================================

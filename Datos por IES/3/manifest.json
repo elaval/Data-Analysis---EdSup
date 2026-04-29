@@ -1,0 +1,208 @@
+{
+  "cod_inst": 3,
+  "inst_key": "3",
+  "display_name": "UNIVERSIDAD DIEGO PORTALES",
+  "extracted_at": "2026-04-28T13:26:48.903650",
+  "elapsed_seconds": 415.3,
+  "students_count": 89657,
+  "output_dir": "Datos por IES/3",
+  "datasets": {
+    "matricula_escolar": {
+      "record_count": 632490,
+      "files_with_data": 22,
+      "output_file": "Datos por IES/3/Matricula_Escolar_3.parquet",
+      "output_files": []
+    },
+    "matricula_ed_superior": {
+      "record_count": 541553,
+      "files_with_data": 19,
+      "output_file": "Datos por IES/3/Matricula_Ed_Superior_3.parquet",
+      "output_files": []
+    },
+    "nem_jovenes": {
+      "record_count": 61567,
+      "files_with_data": 8,
+      "output_file": "Datos por IES/3/NEM_y_Percentil_Jovenes_3.parquet",
+      "output_files": []
+    },
+    "nem_adultos": {
+      "record_count": 1364,
+      "files_with_data": 8,
+      "output_file": "Datos por IES/3/NEM_y_Percentil_Adultos_3.parquet",
+      "output_files": []
+    },
+    "asistencia_anual": {
+      "record_count": 43766,
+      "files_with_data": 5,
+      "output_file": "Datos por IES/3/Asistencia_Anual_3.parquet",
+      "output_files": []
+    },
+    "alumnos_sep": {
+      "record_count": 146523,
+      "files_with_data": 18,
+      "output_file": "Datos por IES/3/Alumnos_SEP_3.parquet",
+      "output_files": []
+    },
+    "egresados_em": {
+      "record_count": 269322,
+      "files_with_data": 23,
+      "output_file": "Datos por IES/3/Egresados_EM_3.parquet",
+      "output_files": []
+    },
+    "paes": {
+      "record_count": 29005,
+      "files_with_data": 5,
+      "output_file": null,
+      "output_files": [
+        "Datos por IES/3/puntajes_admision_2021.parquet",
+        "Datos por IES/3/puntajes_admision_2022.parquet",
+        "Datos por IES/3/puntajes_admision_2023.parquet",
+        "Datos por IES/3/puntajes_admision_2024.parquet",
+        "Datos por IES/3/puntajes_admision_2025.parquet"
+      ]
+    },
+    "titulados_es": {
+      "record_count": 52443,
+      "files_with_data": 9,
+      "output_file": "Datos por IES/3/Titulados_ES_3.parquet",
+      "output_files": []
+    }
+  },
+  "source_files": {
+    "matricula_escolar": [
+      "Datos parquet/Matricula Escolar/matricula_2004.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2005.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2006.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2007.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2008.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2009.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2010.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2011.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2012.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2013.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2014.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2015.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2016.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2017.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2018.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2019.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2020.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2021.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2022.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2023.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2024.parquet",
+      "Datos parquet/Matricula Escolar/matricula_2025.parquet"
+    ],
+    "matricula_ed_superior": [
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2007.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2008.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2009.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2010.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2011.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2012.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2013.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2014.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2015.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2016.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2017.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2018.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2019.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2020.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2021.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2022.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2023.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2024.parquet",
+      "Datos parquet/Matricula Ed Superior/matricula_ed_superior_2025.parquet"
+    ],
+    "nem_jovenes": [
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2016_1990.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2017.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2018.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2019.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2020.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2021.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2022.parquet",
+      "Datos parquet/NEM y Percentil Jovenes/nem_percentil_jovenes_2023.parquet"
+    ],
+    "nem_adultos": [
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2016_1990.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2017.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2018.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2019.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2020.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2021.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2022.parquet",
+      "Datos parquet/NEM y Percentil Adultos/nem_percentil_adultos_2023.parquet"
+    ],
+    "asistencia_anual": [
+      "Datos parquet/Asistencia Anual/asistencia_anual_2018.parquet",
+      "Datos parquet/Asistencia Anual/asistencia_anual_2019.parquet",
+      "Datos parquet/Asistencia Anual/asistencia_anual_2022.parquet",
+      "Datos parquet/Asistencia Anual/asistencia_anual_2023.parquet",
+      "Datos parquet/Asistencia Anual/asistencia_anual_2024.parquet"
+    ],
+    "alumnos_sep": [
+      "Datos parquet/Alumnos SEP/alumnos_sep_2008.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2009.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2010.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2011.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2012.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2013.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2014.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2015.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2016.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2017.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2018.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2019.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2020.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2021.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2022.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2023.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2024.parquet",
+      "Datos parquet/Alumnos SEP/alumnos_sep_2025.parquet"
+    ],
+    "egresados_em": [
+      "Datos parquet/Egresados EM/egresados_em_2002.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2003.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2004.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2005.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2006.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2007.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2008.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2009.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2010.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2011.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2012.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2013.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2014.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2015.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2016.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2017.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2018.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2019.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2020.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2021.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2022.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2023.parquet",
+      "Datos parquet/Egresados EM/egresados_em_2024.parquet"
+    ],
+    "paes": [
+      "Datos parquet/PRUEBA ADMISION ES/puntajes_admision_2021.parquet",
+      "Datos parquet/PRUEBA ADMISION ES/puntajes_admision_2022.parquet",
+      "Datos parquet/PRUEBA ADMISION ES/puntajes_admision_2023.parquet",
+      "Datos parquet/PRUEBA ADMISION ES/puntajes_admision_2024.parquet",
+      "Datos parquet/PRUEBA ADMISION ES/puntajes_admision_2025.parquet"
+    ],
+    "titulados_es": [
+      "Datos parquet/Titulados ES/titulados_es_2015.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2016.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2017.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2018.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2019.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2020.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2021.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2022.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2023.parquet"
+    ]
+  }
+}

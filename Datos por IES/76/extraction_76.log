@@ -1,0 +1,180 @@
+14:03:19  INFO      ============================================================
+14:03:19  INFO      IES extraction  |  cod_inst=76
+14:03:19  INFO      Datasets: ['matricula_escolar', 'matricula_ed_superior', 'nem_jovenes', 'nem_adultos', 'alumnos_sep', 'egresados_em', 'paes', 'titulados_es']
+14:03:19  INFO      Output: Datos por IES/76
+14:03:19  INFO      ============================================================
+14:03:19  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+14:03:19  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=76…
+14:03:20  INFO        2007: 7,711 enrollment records, 7,688 unique MRUNs
+14:03:20  INFO        2008: 8,051 enrollment records, 8,024 unique MRUNs
+14:03:21  INFO        2009: 8,388 enrollment records, 8,350 unique MRUNs
+14:03:21  INFO        2010: 8,742 enrollment records, 8,716 unique MRUNs
+14:03:22  INFO        2011: 9,151 enrollment records, 9,115 unique MRUNs
+14:03:23  INFO        2012: 9,301 enrollment records, 9,276 unique MRUNs
+14:03:23  INFO        2013: 9,565 enrollment records, 9,544 unique MRUNs
+14:03:24  INFO        2014: 9,790 enrollment records, 9,775 unique MRUNs
+14:03:25  INFO        2015: 10,157 enrollment records, 10,138 unique MRUNs
+14:03:26  INFO        2016: 10,310 enrollment records, 10,294 unique MRUNs
+14:03:26  INFO        2017: 10,635 enrollment records, 10,605 unique MRUNs
+14:03:27  INFO        2018: 10,946 enrollment records, 10,918 unique MRUNs
+14:03:28  INFO        2019: 11,137 enrollment records, 11,096 unique MRUNs
+14:03:29  INFO        2020: 11,136 enrollment records, 11,095 unique MRUNs
+14:03:30  INFO        2021: 12,183 enrollment records, 12,101 unique MRUNs
+14:03:31  INFO        2022: 11,941 enrollment records, 11,908 unique MRUNs
+14:03:32  INFO        2023: 11,583 enrollment records, 11,541 unique MRUNs
+14:03:32  INFO        2024: 12,300 enrollment records, 12,240 unique MRUNs
+14:03:33  INFO        2025: 12,165 enrollment records, 12,093 unique MRUNs
+14:03:33  INFO      Total unique students: 47,175
+14:03:33  INFO      Institution: UNIVERSIDAD DE LA FRONTERA
+14:03:33  INFO      Student list saved → Estudiantes_76.parquet (47,175 MRUNs)
+14:03:33  INFO      
+Step 2: matricula_escolar…
+14:03:40  INFO        2004: 24,154 records
+14:03:46  INFO        2005: 25,269 records
+14:03:53  INFO        2006: 25,845 records
+14:03:59  INFO        2007: 26,135 records
+14:04:05  INFO        2008: 25,735 records
+14:04:12  INFO        2009: 26,910 records
+14:04:18  INFO        2010: 27,059 records
+14:04:24  INFO        2011: 26,514 records
+14:04:30  INFO        2012: 25,003 records
+14:04:36  INFO        2013: 23,232 records
+14:04:42  INFO        2014: 21,378 records
+14:04:48  INFO        2015: 19,437 records
+14:04:55  INFO        2016: 17,444 records
+14:05:01  INFO        2017: 15,300 records
+14:05:08  INFO        2018: 13,225 records
+14:05:14  INFO        2019: 11,216 records
+14:05:21  INFO        2020: 9,293 records
+14:05:27  INFO        2021: 7,346 records
+14:05:34  INFO        2022: 5,473 records
+14:05:40  INFO        2023: 3,406 records
+14:05:47  INFO        2024: 1,392 records
+14:05:54  INFO        2025: 2 records
+14:05:58  INFO        → Saved Matricula_Escolar_76.parquet  (380,768 rows, 3.99 MB)
+14:05:59  INFO      
+Step 3: matricula_ed_superior…
+14:06:01  INFO        2007: 9,865 records
+14:06:03  INFO        2008: 11,445 records
+14:06:06  INFO        2009: 11,196 records
+14:06:09  INFO        2010: 12,012 records
+14:06:13  INFO        2011: 12,807 records
+14:06:17  INFO        2012: 13,771 records
+14:06:21  INFO        2013: 16,115 records
+14:06:25  INFO        2014: 15,239 records
+14:06:29  INFO        2015: 15,577 records
+14:06:34  INFO        2016: 16,071 records
+14:06:38  INFO        2017: 16,698 records
+14:06:43  INFO        2018: 16,591 records
+14:06:48  INFO        2019: 17,501 records
+14:06:52  INFO        2020: 16,928 records
+14:06:56  INFO        2021: 18,431 records
+14:07:01  INFO        2022: 17,997 records
+14:07:06  INFO        2023: 17,712 records
+14:07:11  INFO        2024: 18,774 records
+14:07:16  INFO        2025: 19,530 records
+14:07:20  INFO        → Saved Matricula_Ed_Superior_76.parquet  (294,260 rows, 10.21 MB)
+14:07:21  INFO      
+Step 4: nem_jovenes…
+14:07:23  INFO        2016_1990: 21,233 records
+14:07:23  INFO        2017: 2,018 records
+14:07:23  INFO        2018: 1,980 records
+14:07:24  INFO        2019: 1,878 records
+14:07:24  INFO        2020: 1,912 records
+14:07:24  INFO        2021: 1,867 records
+14:07:24  INFO        2022: 2,060 records
+14:07:24  INFO        2023: 2,002 records
+14:07:25  INFO        → Saved NEM_y_Percentil_Jovenes_76.parquet  (34,950 rows, 0.45 MB)
+14:07:25  INFO      
+Step 5: nem_adultos…
+14:07:25  INFO        2016_1990: 543 records
+14:07:25  INFO        2017: 81 records
+14:07:25  INFO        2018: 64 records
+14:07:25  INFO        2019: 55 records
+14:07:25  INFO        2020: 42 records
+14:07:26  INFO        2021: 31 records
+14:07:26  INFO        2022: 31 records
+14:07:26  INFO        2023: 25 records
+14:07:26  INFO        → Saved NEM_y_Percentil_Adultos_76.parquet  (872 rows, 0.02 MB)
+14:07:26  INFO      
+Step 6: alumnos_sep…
+14:07:26  INFO        2008: 2,867 records
+14:07:28  INFO        2009: 5,654 records
+14:07:29  INFO        2010: 6,115 records
+14:07:30  INFO        2011: 6,368 records
+14:07:33  INFO        2012: 12,134 records
+14:07:36  INFO        2013: 14,831 records
+14:07:39  INFO        2014: 11,723 records
+14:07:43  INFO        2015: 10,098 records
+14:07:49  INFO        2016: 13,628 records
+14:07:54  INFO        2017: 11,029 records
+14:08:00  INFO        2018: 10,525 records
+14:08:05  INFO        2019: 9,777 records
+14:08:11  INFO        2020: 8,428 records
+14:08:17  INFO        2021: 6,988 records
+14:08:22  INFO        2022: 5,688 records
+14:08:28  INFO        2023: 4,226 records
+14:08:34  INFO        2024: 2,679 records
+14:08:40  INFO        2025: 1,162 records
+14:08:41  INFO        → Saved Alumnos_SEP_76.parquet  (143,920 rows, 2.67 MB)
+14:08:42  INFO      
+Step 7: egresados_em…
+14:08:43  INFO        2002: 4,353 records
+14:08:44  INFO        2003: 5,648 records
+14:08:45  INFO        2004: 5,403 records
+14:08:47  INFO        2005: 6,688 records
+14:08:48  INFO        2006: 7,052 records
+14:08:49  INFO        2007: 7,324 records
+14:08:51  INFO        2008: 7,401 records
+14:08:52  INFO        2009: 7,531 records
+14:08:53  INFO        2010: 7,584 records
+14:08:54  INFO        2011: 7,470 records
+14:08:56  INFO        2012: 7,709 records
+14:08:57  INFO        2013: 7,906 records
+14:08:58  INFO        2014: 8,148 records
+14:08:59  INFO        2015: 8,208 records
+14:09:01  INFO        2016: 8,147 records
+14:09:02  INFO        2017: 7,933 records
+14:09:03  INFO        2018: 7,767 records
+14:09:05  INFO        2019: 7,786 records
+14:09:06  INFO        2020: 7,880 records
+14:09:07  INFO        2021: 7,320 records
+14:09:09  INFO        2022: 5,484 records
+14:09:09  INFO        2023: 2,036 records
+14:09:10  INFO        2024: 1,397 records
+14:09:10  INFO        → Saved Egresados_EM_76.parquet  (154,175 rows, 1.87 MB)
+14:09:10  INFO      
+Step 8: paes…
+14:09:11  INFO        2021: 3,039 records → puntajes_admision_2021.parquet (0.21 MB)
+14:09:12  INFO        2022: 3,103 records → puntajes_admision_2022.parquet (0.21 MB)
+14:09:13  INFO        2023: 3,327 records → puntajes_admision_2023.parquet (0.29 MB)
+14:09:14  INFO        2024: 3,410 records → puntajes_admision_2024.parquet (0.31 MB)
+14:09:15  INFO        2025: 2,758 records → puntajes_admision_2025.parquet (0.28 MB)
+14:09:15  INFO        → 5 year file(s), 15,637 total rows
+14:09:15  INFO      
+Step 9: titulados_es…
+14:09:16  INFO        2015: 2,005 records
+14:09:16  INFO        2016: 2,387 records
+14:09:17  INFO        2017: 2,425 records
+14:09:17  INFO        2018: 2,328 records
+14:09:18  INFO        2019: 2,653 records
+14:09:18  INFO        2020: 1,777 records
+14:09:19  INFO        2021: 2,971 records
+14:09:20  INFO        2022: 3,539 records
+14:09:20  INFO        2023: 3,111 records
+14:09:21  INFO        → Saved Titulados_ES_76.parquet  (23,196 rows, 0.91 MB)
+14:09:21  INFO      
+============================================================
+14:09:21  INFO      DONE  |  cod_inst=76  (UNIVERSIDAD DE LA FRONTERA)  |  361.4s
+14:09:21  INFO      Students tracked: 47,175
+14:09:21  INFO        matricula_escolar              380,768 records
+14:09:21  INFO        matricula_ed_superior          294,260 records
+14:09:21  INFO        nem_jovenes                    34,950 records
+14:09:21  INFO        nem_adultos                    872 records
+14:09:21  INFO        alumnos_sep                    143,920 records
+14:09:21  INFO        egresados_em                   154,175 records
+14:09:21  INFO        paes                           15,637 records → 5 year file(s)
+14:09:21  INFO        titulados_es                   23,196 records
+14:09:21  INFO      Output: Datos por IES/76
+14:09:21  INFO      ============================================================

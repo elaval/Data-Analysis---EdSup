@@ -1,0 +1,180 @@
+13:57:15  INFO      ============================================================
+13:57:15  INFO      IES extraction  |  cod_inst=87
+13:57:15  INFO      Datasets: ['matricula_escolar', 'matricula_ed_superior', 'nem_jovenes', 'nem_adultos', 'alumnos_sep', 'egresados_em', 'paes', 'titulados_es']
+13:57:15  INFO      Output: Datos por IES/87
+13:57:15  INFO      ============================================================
+13:57:15  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+13:57:15  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=87…
+13:57:16  INFO        2007: 22,500 enrollment records, 22,387 unique MRUNs
+13:57:16  INFO        2008: 23,882 enrollment records, 23,753 unique MRUNs
+13:57:17  INFO        2009: 24,092 enrollment records, 24,006 unique MRUNs
+13:57:18  INFO        2010: 25,172 enrollment records, 25,012 unique MRUNs
+13:57:18  INFO        2011: 25,420 enrollment records, 25,248 unique MRUNs
+13:57:19  INFO        2012: 25,481 enrollment records, 25,280 unique MRUNs
+13:57:20  INFO        2013: 26,396 enrollment records, 26,192 unique MRUNs
+13:57:21  INFO        2014: 26,399 enrollment records, 26,199 unique MRUNs
+13:57:22  INFO        2015: 26,796 enrollment records, 26,546 unique MRUNs
+13:57:23  INFO        2016: 27,596 enrollment records, 27,314 unique MRUNs
+13:57:23  INFO        2017: 27,663 enrollment records, 27,430 unique MRUNs
+13:57:24  INFO        2018: 27,606 enrollment records, 27,412 unique MRUNs
+13:57:25  INFO        2019: 27,165 enrollment records, 26,989 unique MRUNs
+13:57:26  INFO        2020: 28,996 enrollment records, 28,750 unique MRUNs
+13:57:27  INFO        2021: 29,680 enrollment records, 29,407 unique MRUNs
+13:57:27  INFO        2022: 30,428 enrollment records, 30,096 unique MRUNs
+13:57:28  INFO        2023: 29,045 enrollment records, 28,777 unique MRUNs
+13:57:29  INFO        2024: 28,491 enrollment records, 28,221 unique MRUNs
+13:57:30  INFO        2025: 28,017 enrollment records, 27,766 unique MRUNs
+13:57:30  INFO      Total unique students: 112,415
+13:57:30  INFO      Institution: UNIVERSIDAD DE CONCEPCION
+13:57:30  INFO      Student list saved → Estudiantes_87.parquet (112,415 MRUNs)
+13:57:30  INFO      
+Step 2: matricula_escolar…
+13:57:36  INFO        2004: 60,130 records
+13:57:44  INFO        2005: 60,929 records
+13:57:50  INFO        2006: 61,631 records
+13:57:56  INFO        2007: 61,700 records
+13:58:02  INFO        2008: 61,820 records
+13:58:08  INFO        2009: 62,206 records
+13:58:14  INFO        2010: 61,561 records
+13:58:19  INFO        2011: 59,688 records
+13:58:25  INFO        2012: 55,743 records
+13:58:31  INFO        2013: 51,601 records
+13:58:36  INFO        2014: 47,256 records
+13:58:42  INFO        2015: 42,871 records
+13:58:48  INFO        2016: 38,269 records
+13:58:54  INFO        2017: 33,881 records
+13:59:00  INFO        2018: 29,367 records
+13:59:06  INFO        2019: 24,808 records
+13:59:12  INFO        2020: 20,589 records
+13:59:18  INFO        2021: 15,993 records
+13:59:24  INFO        2022: 11,568 records
+13:59:31  INFO        2023: 7,228 records
+13:59:37  INFO        2024: 3,006 records
+13:59:43  INFO        2025: 3 records
+13:59:52  INFO        → Saved Matricula_Escolar_87.parquet  (871,848 rows, 10.78 MB)
+13:59:53  INFO      
+Step 3: matricula_ed_superior…
+13:59:55  INFO        2007: 26,385 records
+13:59:58  INFO        2008: 29,709 records
+14:00:00  INFO        2009: 30,443 records
+14:00:03  INFO        2010: 32,874 records
+14:00:07  INFO        2011: 34,601 records
+14:00:11  INFO        2012: 36,187 records
+14:00:15  INFO        2013: 39,785 records
+14:00:19  INFO        2014: 38,828 records
+14:00:24  INFO        2015: 39,456 records
+14:00:28  INFO        2016: 40,440 records
+14:00:33  INFO        2017: 40,266 records
+14:00:37  INFO        2018: 39,767 records
+14:00:41  INFO        2019: 39,955 records
+14:00:46  INFO        2020: 41,020 records
+14:00:50  INFO        2021: 42,567 records
+14:00:55  INFO        2022: 42,552 records
+14:01:00  INFO        2023: 41,281 records
+14:01:05  INFO        2024: 41,803 records
+14:01:10  INFO        2025: 42,695 records
+14:01:20  INFO        → Saved Matricula_Ed_Superior_87.parquet  (720,614 rows, 25.55 MB)
+14:01:21  INFO      
+Step 4: nem_jovenes…
+14:01:23  INFO        2016_1990: 53,385 records
+14:01:23  INFO        2017: 4,439 records
+14:01:23  INFO        2018: 4,577 records
+14:01:23  INFO        2019: 4,186 records
+14:01:24  INFO        2020: 4,621 records
+14:01:24  INFO        2021: 4,431 records
+14:01:24  INFO        2022: 4,338 records
+14:01:24  INFO        2023: 4,218 records
+14:01:25  INFO        → Saved NEM_y_Percentil_Jovenes_87.parquet  (84,195 rows, 1.06 MB)
+14:01:25  INFO      
+Step 5: nem_adultos…
+14:01:25  INFO        2016_1990: 948 records
+14:01:25  INFO        2017: 82 records
+14:01:25  INFO        2018: 52 records
+14:01:26  INFO        2019: 68 records
+14:01:26  INFO        2020: 61 records
+14:01:26  INFO        2021: 32 records
+14:01:26  INFO        2022: 46 records
+14:01:26  INFO        2023: 28 records
+14:01:26  INFO        → Saved NEM_y_Percentil_Adultos_87.parquet  (1,317 rows, 0.03 MB)
+14:01:26  INFO      
+Step 6: alumnos_sep…
+14:01:27  INFO        2008: 4,736 records
+14:01:28  INFO        2009: 10,892 records
+14:01:29  INFO        2010: 11,671 records
+14:01:30  INFO        2011: 12,530 records
+14:01:33  INFO        2012: 20,066 records
+14:01:36  INFO        2013: 24,348 records
+14:01:39  INFO        2014: 21,773 records
+14:01:43  INFO        2015: 19,478 records
+14:01:48  INFO        2016: 27,654 records
+14:01:53  INFO        2017: 22,506 records
+14:01:58  INFO        2018: 21,452 records
+14:02:04  INFO        2019: 20,440 records
+14:02:09  INFO        2020: 17,830 records
+14:02:14  INFO        2021: 14,459 records
+14:02:19  INFO        2022: 11,621 records
+14:02:25  INFO        2023: 8,371 records
+14:02:30  INFO        2024: 5,324 records
+14:02:36  INFO        2025: 2,365 records
+14:02:39  INFO        → Saved Alumnos_SEP_87.parquet  (277,516 rows, 5.22 MB)
+14:02:39  INFO      
+Step 7: egresados_em…
+14:02:40  INFO        2002: 14,190 records
+14:02:41  INFO        2003: 16,092 records
+14:02:43  INFO        2004: 17,685 records
+14:02:44  INFO        2005: 18,349 records
+14:02:45  INFO        2006: 18,561 records
+14:02:46  INFO        2007: 18,345 records
+14:02:48  INFO        2008: 17,986 records
+14:02:49  INFO        2009: 17,876 records
+14:02:50  INFO        2010: 17,754 records
+14:02:51  INFO        2011: 17,312 records
+14:02:52  INFO        2012: 17,884 records
+14:02:53  INFO        2013: 17,797 records
+14:02:55  INFO        2014: 17,946 records
+14:02:56  INFO        2015: 18,102 records
+14:02:57  INFO        2016: 17,718 records
+14:02:58  INFO        2017: 17,938 records
+14:02:59  INFO        2018: 17,861 records
+14:03:00  INFO        2019: 17,593 records
+14:03:02  INFO        2020: 17,546 records
+14:03:03  INFO        2021: 15,970 records
+14:03:04  INFO        2022: 11,594 records
+14:03:05  INFO        2023: 4,268 records
+14:03:05  INFO        2024: 3,026 records
+14:03:06  INFO        → Saved Egresados_EM_87.parquet  (369,393 rows, 4.83 MB)
+14:03:07  INFO      
+Step 8: paes…
+14:03:07  INFO        2021: 7,610 records → puntajes_admision_2021.parquet (0.42 MB)
+14:03:08  INFO        2022: 7,546 records → puntajes_admision_2022.parquet (0.42 MB)
+14:03:09  INFO        2023: 7,905 records → puntajes_admision_2023.parquet (0.55 MB)
+14:03:10  INFO        2024: 8,022 records → puntajes_admision_2024.parquet (0.57 MB)
+14:03:12  INFO        2025: 6,601 records → puntajes_admision_2025.parquet (0.53 MB)
+14:03:12  INFO        → 5 year file(s), 37,684 total rows
+14:03:12  INFO      
+Step 9: titulados_es…
+14:03:12  INFO        2015: 5,709 records
+14:03:13  INFO        2016: 5,861 records
+14:03:13  INFO        2017: 6,482 records
+14:03:14  INFO        2018: 6,495 records
+14:03:15  INFO        2019: 6,370 records
+14:03:15  INFO        2020: 5,378 records
+14:03:16  INFO        2021: 7,314 records
+14:03:16  INFO        2022: 7,994 records
+14:03:17  INFO        2023: 8,496 records
+14:03:18  INFO        → Saved Titulados_ES_87.parquet  (60,099 rows, 2.18 MB)
+14:03:18  INFO      
+============================================================
+14:03:18  INFO      DONE  |  cod_inst=87  (UNIVERSIDAD DE CONCEPCION)  |  362.5s
+14:03:18  INFO      Students tracked: 112,415
+14:03:18  INFO        matricula_escolar              871,848 records
+14:03:18  INFO        matricula_ed_superior          720,614 records
+14:03:18  INFO        nem_jovenes                    84,195 records
+14:03:18  INFO        nem_adultos                    1,317 records
+14:03:18  INFO        alumnos_sep                    277,516 records
+14:03:18  INFO        egresados_em                   369,393 records
+14:03:18  INFO        paes                           37,684 records → 5 year file(s)
+14:03:18  INFO        titulados_es                   60,099 records
+14:03:18  INFO      Output: Datos por IES/87
+14:03:18  INFO      ============================================================

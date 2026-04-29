@@ -1,0 +1,49 @@
+16:15:42  INFO      ============================================================
+16:15:42  INFO      IES extraction  |  cod_inst=34
+16:15:42  INFO      Datasets: ['titulados_es']
+16:15:42  INFO      Output: Datos por IES/34
+16:15:42  INFO      ============================================================
+16:15:42  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+16:15:42  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=34…
+16:15:43  INFO        2007: 5,323 enrollment records, 5,282 unique MRUNs
+16:15:43  INFO        2008: 5,543 enrollment records, 5,508 unique MRUNs
+16:15:44  INFO        2009: 5,976 enrollment records, 5,956 unique MRUNs
+16:15:44  INFO        2010: 6,503 enrollment records, 6,466 unique MRUNs
+16:15:45  INFO        2011: 7,150 enrollment records, 7,114 unique MRUNs
+16:15:46  INFO        2012: 7,557 enrollment records, 7,524 unique MRUNs
+16:15:46  INFO        2013: 8,167 enrollment records, 7,931 unique MRUNs
+16:15:47  INFO        2014: 8,603 enrollment records, 8,560 unique MRUNs
+16:15:48  INFO        2015: 8,915 enrollment records, 8,852 unique MRUNs
+16:15:49  INFO        2016: 9,345 enrollment records, 9,272 unique MRUNs
+16:15:50  INFO        2017: 10,063 enrollment records, 9,976 unique MRUNs
+16:15:51  INFO        2018: 10,928 enrollment records, 10,831 unique MRUNs
+16:15:52  INFO        2019: 11,883 enrollment records, 11,776 unique MRUNs
+16:15:52  INFO        2020: 15,040 enrollment records, 14,843 unique MRUNs
+16:15:53  INFO        2021: 15,743 enrollment records, 15,520 unique MRUNs
+16:15:54  INFO        2022: 16,211 enrollment records, 16,016 unique MRUNs
+16:15:55  INFO        2023: 18,981 enrollment records, 18,640 unique MRUNs
+16:15:56  INFO        2024: 23,316 enrollment records, 22,813 unique MRUNs
+16:15:57  INFO        2025: 20,595 enrollment records, 20,208 unique MRUNs
+16:15:57  INFO      Total unique students: 70,267
+16:15:57  INFO      Institution: UNIVERSIDAD DE LOS ANDES
+16:15:57  INFO      Student list saved → Estudiantes_34.parquet (70,267 MRUNs)
+16:15:57  INFO      
+Step 2: titulados_es…
+16:15:58  INFO        2015: 4,714 records
+16:15:58  INFO        2016: 4,935 records
+16:15:59  INFO        2017: 5,872 records
+16:15:59  INFO        2018: 6,614 records
+16:16:00  INFO        2019: 6,516 records
+16:16:00  INFO        2020: 5,527 records
+16:16:01  INFO        2021: 8,796 records
+16:16:02  INFO        2022: 9,118 records
+16:16:03  INFO        2023: 7,680 records
+16:16:03  INFO        → Saved Titulados_ES_34.parquet  (59,772 rows, 2.09 MB)
+16:16:03  INFO      
+============================================================
+16:16:03  INFO      DONE  |  cod_inst=34  (UNIVERSIDAD DE LOS ANDES)  |  21.1s
+16:16:03  INFO      Students tracked: 70,267
+16:16:03  INFO        titulados_es                   59,772 records
+16:16:03  INFO      Output: Datos por IES/34
+16:16:03  INFO      ============================================================

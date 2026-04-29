@@ -1,0 +1,49 @@
+16:15:19  INFO      ============================================================
+16:15:19  INFO      IES extraction  |  cod_inst=45
+16:15:19  INFO      Datasets: ['titulados_es']
+16:15:19  INFO      Output: Datos por IES/45
+16:15:19  INFO      ============================================================
+16:15:19  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+16:15:19  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=45…
+16:15:19  INFO        2007: 9,655 enrollment records, 9,553 unique MRUNs
+16:15:20  INFO        2008: 11,206 enrollment records, 11,102 unique MRUNs
+16:15:20  INFO        2009: 12,480 enrollment records, 12,360 unique MRUNs
+16:15:21  INFO        2010: 13,653 enrollment records, 13,586 unique MRUNs
+16:15:22  INFO        2011: 14,434 enrollment records, 14,369 unique MRUNs
+16:15:23  INFO        2012: 15,789 enrollment records, 15,645 unique MRUNs
+16:15:23  INFO        2013: 16,980 enrollment records, 16,887 unique MRUNs
+16:15:24  INFO        2014: 17,162 enrollment records, 17,052 unique MRUNs
+16:15:25  INFO        2015: 16,864 enrollment records, 16,747 unique MRUNs
+16:15:26  INFO        2016: 16,565 enrollment records, 16,410 unique MRUNs
+16:15:27  INFO        2017: 17,031 enrollment records, 16,889 unique MRUNs
+16:15:28  INFO        2018: 16,975 enrollment records, 16,854 unique MRUNs
+16:15:29  INFO        2019: 17,105 enrollment records, 16,977 unique MRUNs
+16:15:30  INFO        2020: 18,176 enrollment records, 18,050 unique MRUNs
+16:15:30  INFO        2021: 19,891 enrollment records, 19,712 unique MRUNs
+16:15:31  INFO        2022: 20,139 enrollment records, 19,907 unique MRUNs
+16:15:32  INFO        2023: 21,255 enrollment records, 21,114 unique MRUNs
+16:15:33  INFO        2024: 22,598 enrollment records, 22,404 unique MRUNs
+16:15:34  INFO        2025: 23,008 enrollment records, 22,810 unique MRUNs
+16:15:34  INFO      Total unique students: 96,180
+16:15:34  INFO      Institution: UNIVERSIDAD DEL DESARROLLO
+16:15:34  INFO      Student list saved → Estudiantes_45.parquet (96,180 MRUNs)
+16:15:34  INFO      
+Step 2: titulados_es…
+16:15:35  INFO        2015: 5,039 records
+16:15:35  INFO        2016: 5,700 records
+16:15:36  INFO        2017: 6,873 records
+16:15:37  INFO        2018: 7,034 records
+16:15:37  INFO        2019: 6,643 records
+16:15:38  INFO        2020: 6,103 records
+16:15:39  INFO        2021: 10,311 records
+16:15:40  INFO        2022: 10,258 records
+16:15:40  INFO        2023: 10,378 records
+16:15:41  INFO        → Saved Titulados_ES_45.parquet  (68,339 rows, 2.49 MB)
+16:15:41  INFO      
+============================================================
+16:15:41  INFO      DONE  |  cod_inst=45  (UNIVERSIDAD DEL DESARROLLO)  |  22.5s
+16:15:41  INFO      Students tracked: 96,180
+16:15:41  INFO        titulados_es                   68,339 records
+16:15:41  INFO      Output: Datos por IES/45
+16:15:41  INFO      ============================================================

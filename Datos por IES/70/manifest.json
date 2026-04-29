@@ -1,0 +1,30 @@
+{
+  "cod_inst": 70,
+  "inst_key": "70",
+  "display_name": "UNIVERSIDAD DE CHILE",
+  "extracted_at": "2026-04-27T16:14:30.600600",
+  "elapsed_seconds": 24.5,
+  "students_count": 173252,
+  "output_dir": "Datos por IES/70",
+  "datasets": {
+    "titulados_es": {
+      "record_count": 95807,
+      "files_with_data": 9,
+      "output_file": "Datos por IES/70/Titulados_ES_70.parquet",
+      "output_files": []
+    }
+  },
+  "source_files": {
+    "titulados_es": [
+      "Datos parquet/Titulados ES/titulados_es_2015.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2016.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2017.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2018.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2019.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2020.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2021.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2022.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2023.parquet"
+    ]
+  }
+}

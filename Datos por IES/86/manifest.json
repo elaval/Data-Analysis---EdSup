@@ -1,0 +1,30 @@
+{
+  "cod_inst": 86,
+  "inst_key": "86",
+  "display_name": "PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE",
+  "extracted_at": "2026-04-27T16:14:05.614810",
+  "elapsed_seconds": 24.1,
+  "students_count": 193613,
+  "output_dir": "Datos por IES/86",
+  "datasets": {
+    "titulados_es": {
+      "record_count": 136558,
+      "files_with_data": 9,
+      "output_file": "Datos por IES/86/Titulados_ES_86.parquet",
+      "output_files": []
+    }
+  },
+  "source_files": {
+    "titulados_es": [
+      "Datos parquet/Titulados ES/titulados_es_2015.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2016.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2017.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2018.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2019.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2020.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2021.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2022.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2023.parquet"
+    ]
+  }
+}

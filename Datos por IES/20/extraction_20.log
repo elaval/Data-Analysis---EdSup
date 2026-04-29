@@ -1,0 +1,189 @@
+13:18:48  INFO      ============================================================
+13:18:48  INFO      IES extraction  |  cod_inst=20
+13:18:48  INFO      Datasets: ['matricula_escolar', 'matricula_ed_superior', 'nem_jovenes', 'nem_adultos', 'asistencia_anual', 'alumnos_sep', 'egresados_em', 'paes', 'titulados_es']
+13:18:48  INFO      Output: Datos por IES/20
+13:18:48  INFO      ============================================================
+13:18:48  INFO      
+Step 1: Collecting students from Matricula Ed Superior…
+13:18:48  INFO      Scanning 19 Matricula Ed Superior files for cod_inst=20…
+13:18:49  INFO        2007: 24,732 enrollment records, 24,726 unique MRUNs
+13:18:49  INFO        2008: 29,929 enrollment records, 29,771 unique MRUNs
+13:18:50  INFO        2009: 33,330 enrollment records, 33,204 unique MRUNs
+13:18:50  INFO        2010: 36,907 enrollment records, 36,738 unique MRUNs
+13:18:51  INFO        2011: 39,147 enrollment records, 39,091 unique MRUNs
+13:18:52  INFO        2012: 42,218 enrollment records, 42,109 unique MRUNs
+13:18:53  INFO        2013: 45,233 enrollment records, 45,086 unique MRUNs
+13:18:53  INFO        2014: 48,255 enrollment records, 48,197 unique MRUNs
+13:18:54  INFO        2015: 47,414 enrollment records, 47,293 unique MRUNs
+13:18:55  INFO        2016: 46,804 enrollment records, 46,673 unique MRUNs
+13:18:56  INFO        2017: 47,452 enrollment records, 47,364 unique MRUNs
+13:18:57  INFO        2018: 48,481 enrollment records, 48,304 unique MRUNs
+13:18:58  INFO        2019: 50,015 enrollment records, 49,834 unique MRUNs
+13:18:58  INFO        2020: 49,360 enrollment records, 49,266 unique MRUNs
+13:18:59  INFO        2021: 56,840 enrollment records, 56,549 unique MRUNs
+13:19:00  INFO        2022: 57,645 enrollment records, 57,470 unique MRUNs
+13:19:01  INFO        2023: 59,075 enrollment records, 58,970 unique MRUNs
+13:19:02  INFO        2024: 64,226 enrollment records, 64,065 unique MRUNs
+13:19:03  INFO        2025: 72,380 enrollment records, 72,073 unique MRUNs
+13:19:03  INFO      Total unique students: 283,464
+13:19:03  INFO      Institution: UNIVERSIDAD ANDRES BELLO
+13:19:03  INFO      Student list saved → Estudiantes_20.parquet (283,464 MRUNs)
+13:19:03  INFO      
+Step 2: matricula_escolar…
+13:19:09  INFO        2004: 147,814 records
+13:19:16  INFO        2005: 148,573 records
+13:19:23  INFO        2006: 148,365 records
+13:19:30  INFO        2007: 146,036 records
+13:19:37  INFO        2008: 143,859 records
+13:19:43  INFO        2009: 141,547 records
+13:19:50  INFO        2010: 136,470 records
+13:19:56  INFO        2011: 129,368 records
+13:20:02  INFO        2012: 118,986 records
+13:20:08  INFO        2013: 107,787 records
+13:20:14  INFO        2014: 96,550 records
+13:20:20  INFO        2015: 86,268 records
+13:20:27  INFO        2016: 76,199 records
+13:20:33  INFO        2017: 66,979 records
+13:20:40  INFO        2018: 58,090 records
+13:20:46  INFO        2019: 48,628 records
+13:20:53  INFO        2020: 39,831 records
+13:20:59  INFO        2021: 30,904 records
+13:21:06  INFO        2022: 22,398 records
+13:21:13  INFO        2023: 13,629 records
+13:21:20  INFO        2024: 5,453 records
+13:21:27  INFO        2025: 4 records
+13:21:47  INFO        → Saved Matricula_Escolar_20.parquet  (1,913,738 rows, 28.37 MB)
+13:21:49  INFO      
+Step 3: matricula_ed_superior…
+13:21:52  INFO        2007: 57,112 records
+13:21:55  INFO        2008: 64,601 records
+13:21:58  INFO        2009: 70,203 records
+13:22:01  INFO        2010: 77,259 records
+13:22:05  INFO        2011: 82,466 records
+13:22:09  INFO        2012: 87,838 records
+13:22:13  INFO        2013: 94,203 records
+13:22:18  INFO        2014: 95,909 records
+13:22:22  INFO        2015: 95,492 records
+13:22:27  INFO        2016: 94,344 records
+13:22:32  INFO        2017: 94,139 records
+13:22:36  INFO        2018: 92,850 records
+13:22:41  INFO        2019: 91,692 records
+13:22:46  INFO        2020: 86,966 records
+13:22:51  INFO        2021: 95,543 records
+13:22:56  INFO        2022: 92,536 records
+13:23:01  INFO        2023: 91,027 records
+13:23:06  INFO        2024: 94,487 records
+13:23:12  INFO        2025: 102,903 records
+13:23:39  INFO        → Saved Matricula_Ed_Superior_20.parquet  (1,661,570 rows, 66.15 MB)
+13:23:41  INFO      
+Step 4: nem_jovenes…
+13:23:44  INFO        2016_1990: 129,011 records
+13:23:44  INFO        2017: 8,611 records
+13:23:44  INFO        2018: 9,210 records
+13:23:45  INFO        2019: 8,459 records
+13:23:45  INFO        2020: 8,932 records
+13:23:46  INFO        2021: 8,361 records
+13:23:46  INFO        2022: 8,726 records
+13:23:46  INFO        2023: 8,117 records
+13:23:47  INFO        → Saved NEM_y_Percentil_Jovenes_20.parquet  (189,427 rows, 2.10 MB)
+13:23:47  INFO      
+Step 5: nem_adultos…
+13:23:48  INFO        2016_1990: 7,137 records
+13:23:48  INFO        2017: 620 records
+13:23:48  INFO        2018: 575 records
+13:23:48  INFO        2019: 478 records
+13:23:49  INFO        2020: 397 records
+13:23:49  INFO        2021: 312 records
+13:23:49  INFO        2022: 231 records
+13:23:50  INFO        2023: 198 records
+13:23:50  INFO        → Saved NEM_y_Percentil_Adultos_20.parquet  (9,948 rows, 0.14 MB)
+13:23:50  INFO      
+Step 6: asistencia_anual…
+13:23:58  INFO        2018: 45,307 records
+13:24:08  INFO        2019: 37,758 records
+13:24:17  INFO        2022: 17,440 records
+13:24:26  INFO        2023: 10,508 records
+13:24:35  INFO        2024: 4,174 records
+13:24:37  INFO        → Saved Asistencia_Anual_20.parquet  (115,187 rows, 4.31 MB)
+13:24:37  INFO      
+Step 7: alumnos_sep…
+13:24:38  INFO        2008: 5,115 records
+13:24:39  INFO        2009: 14,202 records
+13:24:41  INFO        2010: 15,416 records
+13:24:42  INFO        2011: 17,066 records
+13:24:45  INFO        2012: 30,983 records
+13:24:48  INFO        2013: 37,860 records
+13:24:52  INFO        2014: 34,772 records
+13:24:56  INFO        2015: 30,864 records
+13:25:02  INFO        2016: 40,978 records
+13:25:07  INFO        2017: 31,078 records
+13:25:13  INFO        2018: 29,731 records
+13:25:19  INFO        2019: 28,496 records
+13:25:25  INFO        2020: 24,726 records
+13:25:30  INFO        2021: 19,934 records
+13:25:36  INFO        2022: 16,731 records
+13:25:41  INFO        2023: 12,178 records
+13:25:47  INFO        2024: 7,345 records
+13:25:54  INFO        2025: 3,285 records
+13:25:57  INFO        → Saved Alumnos_SEP_20.parquet  (400,760 rows, 7.80 MB)
+13:25:58  INFO      
+Step 8: egresados_em…
+13:25:59  INFO        2002: 34,967 records
+13:26:00  INFO        2003: 39,636 records
+13:26:02  INFO        2004: 44,065 records
+13:26:04  INFO        2005: 46,396 records
+13:26:05  INFO        2006: 47,234 records
+13:26:06  INFO        2007: 46,917 records
+13:26:08  INFO        2008: 46,460 records
+13:26:09  INFO        2009: 47,024 records
+13:26:11  INFO        2010: 46,454 records
+13:26:12  INFO        2011: 43,772 records
+13:26:13  INFO        2012: 43,334 records
+13:26:15  INFO        2013: 40,707 records
+13:26:16  INFO        2014: 38,443 records
+13:26:18  INFO        2015: 37,680 records
+13:26:19  INFO        2016: 36,368 records
+13:26:20  INFO        2017: 36,063 records
+13:26:22  INFO        2018: 35,576 records
+13:26:23  INFO        2019: 34,913 records
+13:26:25  INFO        2020: 34,528 records
+13:26:26  INFO        2021: 30,763 records
+13:26:28  INFO        2022: 22,465 records
+13:26:28  INFO        2023: 8,699 records
+13:26:29  INFO        2024: 5,555 records
+13:26:32  INFO        → Saved Egresados_EM_20.parquet  (848,019 rows, 12.15 MB)
+13:26:32  INFO      
+Step 9: paes…
+13:26:33  INFO        2021: 16,195 records → puntajes_admision_2021.parquet (0.83 MB)
+13:26:34  INFO        2022: 15,842 records → puntajes_admision_2022.parquet (0.81 MB)
+13:26:36  INFO        2023: 16,584 records → puntajes_admision_2023.parquet (1.04 MB)
+13:26:37  INFO        2024: 16,281 records → puntajes_admision_2024.parquet (1.04 MB)
+13:26:39  INFO        2025: 13,205 records → puntajes_admision_2025.parquet (0.93 MB)
+13:26:39  INFO        → 5 year file(s), 78,107 total rows
+13:26:39  INFO      
+Step 10: titulados_es…
+13:26:39  INFO        2015: 16,315 records
+13:26:40  INFO        2016: 16,672 records
+13:26:41  INFO        2017: 18,159 records
+13:26:41  INFO        2018: 19,687 records
+13:26:42  INFO        2019: 19,107 records
+13:26:43  INFO        2020: 16,244 records
+13:26:44  INFO        2021: 22,692 records
+13:26:45  INFO        2022: 25,011 records
+13:26:45  INFO        2023: 24,733 records
+13:26:47  INFO        → Saved Titulados_ES_20.parquet  (178,620 rows, 6.31 MB)
+13:26:47  INFO      
+============================================================
+13:26:47  INFO      DONE  |  cod_inst=20  (UNIVERSIDAD ANDRES BELLO)  |  478.8s
+13:26:47  INFO      Students tracked: 283,464
+13:26:47  INFO        matricula_escolar              1,913,738 records
+13:26:47  INFO        matricula_ed_superior          1,661,570 records
+13:26:47  INFO        nem_jovenes                    189,427 records
+13:26:47  INFO        nem_adultos                    9,948 records
+13:26:47  INFO        asistencia_anual               115,187 records
+13:26:47  INFO        alumnos_sep                    400,760 records
+13:26:47  INFO        egresados_em                   848,019 records
+13:26:47  INFO        paes                           78,107 records → 5 year file(s)
+13:26:47  INFO        titulados_es                   178,620 records
+13:26:47  INFO      Output: Datos por IES/20
+13:26:47  INFO      ============================================================

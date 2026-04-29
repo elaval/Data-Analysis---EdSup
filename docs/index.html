@@ -1,0 +1,732 @@
+<!doctype html>
+<notebook theme="glacier">
+  <title>Mirada preliminar a estudiantes de Educación Superior</title>
+  <script id="1" type="text/markdown">
+    # Mirada preliminar a estudiantes de Educación Superior
+  </script>
+  <script id="54" type="text/markdown">
+    ## ¿Cuántos estudiantes ingresan cada año al pregrado?
+
+    El volumen de ingresos revela con claridad las distintas escalas de operación de las universidades
+    chilenas. Universidad Andrés Bello se ubica en una categoría propia: con más de 10.000 nuevos
+    estudiantes anuales de pregrado, duplica o triplica a la mayoría del grupo. En un segundo nivel
+    se agrupan PUC, U. Autónoma, U. de Chile y USACH, con ingresos anuales entre 4.000 y 6.000
+    estudiantes.
+
+    Más allá del tamaño, la trayectoria importa. La caída sostenida de UAI desde 2017 —llegando a
+    menos de 500 ingresos hacia 2021— refleja la crisis que afectó a varias universidades privadas
+    no acreditadas durante ese período. U. Andrés Bello, en cambio, muestra un crecimiento casi
+    ininterrumpido, consolidándose como la universidad con mayor volumen de ingresos del grupo.
+  </script>
+  <script id="38" type="text/x-typescript">
+    (() => {
+      const dataPlot = _.chain(dataIngresos)
+        .orderBy(d => d.año)
+        .filter(d => d.año > 2010 && d.año < 2025)
+        .value()
+      return Plot.plot({
+        title: "Evolución de Matrícula (Ingresos) de Pregrado",
+        width,
+        marginRight:150,
+        y:{
+          type:"log"
+        },
+      marks:[
+        Plot.lineY(dataPlot,{
+          x:"año",
+          y:"total_ingresos",
+          stroke:"ie"
+        }),    Plot.dot(dataPlot,{
+          x:"año",
+          y:"total_ingresos",
+          fill:"ie"
+        }),
+        Plot.text(dataPlot,Plot.selectLast({
+          x:"año",
+          y:"total_ingresos",
+          z:"ie",
+          textAnchor:"start",
+          dx:5,
+          text:"ie"
+        }))
+      ]
+    })
+    })()
+  </script>
+  <script id="55" type="text/markdown">
+    ## La transformación del acceso: más estudiantes vulnerables en cada cohorte
+
+    La proporción de estudiantes que alguna vez fueron clasificados como prioritarios en el sistema
+    SEP ha crecido en todas las universidades del grupo, en algunos casos de manera dramática.
+    U. Autónoma lidera con casi un 65% en 2024, seguida por U. Austral, U. de La Frontera y UDEC,
+    todas por encima del 60%. En el extremo opuesto, U. de Los Andes y UAI no superan el 10%.
+
+    Una advertencia de lectura: las cohortes más antiguas (antes de 2015 aprox.) aparecen con
+    porcentajes menores no necesariamente porque recibieran menos estudiantes vulnerables, sino
+    porque la cobertura del padrón SEP era menor. A medida que el sistema acumuló más años de
+    datos, más estudiantes quedaron registrados como prioritarios en algún momento de su trayectoria
+    escolar. La tendencia ascendente refleja tanto un cambio real en composición estudiantil como
+    una mejora en la cobertura del dato.
+  </script>
+  <script id="40" type="text/x-typescript">
+    (() => {
+      const dataPlot = _.chain(dataPrioritario)
+        .orderBy(d => d.año)
+        .filter(d => d.año > 2016 && d.año < 2025 )
+        .value()
+      return Plot.plot({
+        title: "Evolución de % de alumnos prioritarios",
+        width,
+        marginRight:150,
+        y:{
+          type:"linear",
+          tickFormat:"%"
+        },
+      marks:[
+        Plot.lineY(dataPlot,{
+          x:"año",
+          y:"porc_prioritario",
+          stroke:"ie"
+        }),    Plot.dot(dataPlot,{
+          x:"año",
+          y:"porc_prioritario",
+          fill:"ie"
+        }),
+        Plot.text(dataPlot,Plot.selectLast({
+          x:"año",
+          y:"porc_prioritario",
+          z:"ie",
+          textAnchor:"start",
+          dx:5,
+          text:"ie"
+        }))
+      ]
+    })
+    })()
+  </script>
+  <script id="56" type="text/markdown">
+    ## Rendimiento escolar de origen: ¿de qué tercios del ranking llegan los estudiantes?
+
+    El porcentaje de estudiantes que ingresó desde el tercio superior del ranking de NEM de su
+    generación muestra perfiles muy distintos según institución. PUC se mantiene consistentemente
+    sobre el 70%, lo que refleja su alto poder de selectividad: atrae sistemáticamente a estudiantes
+    con los mejores promedios escolares. U. de Chile, USACH y UDEC siguen de cerca, entre el 60%
+    y el 72%, confirmando el peso de la vía meritocrática en las universidades del CRUCH.
+
+    El contraste con el grupo privado es marcado: UAB, UDD, UAI y U. de Los Andes tienen entre
+    25% y 35% de sus ingresos desde ese tercio superior, lo que indica que su modelo atiende a
+    un perfil académico más heterogéneo. U. Autónoma muestra un patrón interesante: combina
+    alta proporción de estudiantes prioritarios con un perfil de NEM intermedio (~35%), lo que
+    sugiere que recibe estudiantes vulnerables que no siempre provienen del tercio académico
+    más destacado de su generación.
+  </script>
+  <script id="42" type="text/x-typescript">
+    (() => {
+      const dataPlot = _.chain(dataPrioritarioDecil)
+        .orderBy(d => d.año)
+        .filter(d => d.año > 2016 && d.año < 2025 )
+        .value()
+      return Plot.plot({
+        title: "Porcentaje de estudiantes de ingreso provenientes de los 3 primeros deciles",
+        width,
+        marginRight:150,
+        y:{
+          type:"linear",
+          tickFormat:"%"
+        },
+      marks:[
+        Plot.lineY(dataPlot,{
+          x:"año",
+          y:"porc_decil_1_3",
+          stroke:"ie"
+        }),    Plot.dot(dataPlot,{
+          x:"año",
+          y:"porc_decil_1_3",
+          fill:"ie"
+        }),
+        Plot.text(dataPlot,Plot.selectLast({
+          x:"año",
+          y:"porc_decil_1_3",
+          z:"ie",
+          textAnchor:"start",
+          dx:5,
+          text:"ie"
+        }))
+      ]
+    })
+    })()
+  </script>
+  <script id="57" type="text/markdown">
+    ## Dos dimensiones, cuatro perfiles institucionales
+
+    Este mapa sitúa a cada universidad en el cruce entre inclusión socioeconómica (eje vertical:
+    % de estudiantes prioritarios) y excelencia académica de origen (eje horizontal: % desde el
+    tercio superior de NEM). Emergen cuatro perfiles nítidos.
+
+    **Arriba a la derecha — inclusión con excelencia**: U. Austral, U. de La Frontera y UDEC combinan
+    alta proporción de estudiantes prioritarios con alto porcentaje de buenos promedios escolares.
+    Son universidades regionales del CRUCH que operan como principal puerta de acceso en sus
+    territorios, sirviendo a poblaciones vulnerables que aun así destacan académicamente en sus
+    establecimientos de origen.
+
+    **Abajo a la derecha — selectivas tradicionales**: PUC y U. de Chile atraen los mejores NEM
+    pero con menor representación de estudiantes prioritarios. Su selectividad tiende a filtrar
+    hacia sectores socioeconómicos medios y altos.
+
+    **Arriba a la izquierda — alta inclusión, NEM diverso**: U. Autónoma es el caso más extremo del
+    grupo: 67% de estudiantes prioritarios pero solo ~35% desde el tercio superior. Atiende a
+    una población vulnerable con trayectoria académica heterogénea, un perfil de segunda oportunidad.
+
+    **Abajo a la izquierda — privadas con perfil propio**: UAB, UDD, U. de Los Andes y UAI muestran
+    baja proporción en ambas dimensiones. No se trata necesariamente de menor calidad, sino de
+    un modelo que atrae a estudiantes de sectores medios que no son ni los más vulnerables ni
+    los de mayor rendimiento escolar relativo.
+  </script>
+  <script id="45" type="module">
+    const selectAño = view(Scrubber(
+      d3.range(2018, 2025),
+      {
+        delay: 1000,
+        loop: true,
+        autoplay: false,
+        format: d => String(d),
+        initial:2024
+      }
+    ))
+  </script>
+  <script id="43" type="text/x-typescript">
+    (() => {
+      const dataPlot = _.chain(dataPrioritarioDecil)
+        .orderBy(d => d.año)
+        .filter(d => d.año == selectAño )
+        .value()
+      return Plot.plot({
+        title: "Caracterización de estudiantes al ingreso (prioritarios vs percentil alto)",
+        width,
+        marginRight:150,
+        x:{
+          type:"linear",
+          tickFormat:"%",
+          domain:[0,1]
+        },
+        y:{
+          type:"linear",
+          tickFormat:"%",
+                domain:[0,1]
+
+        },
+      marks:[
+        Plot.ruleX([0.5]),
+        Plot.ruleY([0.5]),
+      Plot.dot(dataPlot,{
+          y:"porc_prioritario",
+          x:"porc_decil_1_3",
+          r:"total_ingresos",
+          fill:"ie"
+        }),
+        Plot.text(dataPlot,Plot.selectLast({
+          y:"porc_prioritario",
+          x:"porc_decil_1_3",
+          z:"ie",
+          textAnchor:"middle",
+          dy:15,
+          text:"ie"
+        })),
+        Plot.text([{año:selectAño}],{
+          x:0.75,
+
+          y:1,
+          z:"ie",
+          textAnchor:"middle",
+          dy:15,
+          text:d => d3.format("d")(d["año"]),
+          fontSize:45,
+          fill:"lightgrey"
+
+        })
+      ]
+    })
+    })()
+  </script>
+  <script id="58" type="text/markdown">
+    ## ¿A qué edad llegan los estudiantes? El peso de las trayectorias no lineales
+
+    La composición etaria al ingreso es uno de los indicadores más reveladores de cómo cada
+    universidad se relaciona con el tiempo "esperado" de llegar a la educación superior. PUC
+    concentra cerca del 80% de sus ingresos en el tramo 18–20 años: la gran mayoría llega
+    directamente desde el colegio, sin desvíos. UAI y U. de Los Andes muestran patrones similares.
+
+    El contraste más llamativo es UAB: solo el 50% ingresa entre 18 y 20 años, con franjas
+    significativas en los tramos 21–24, 25–29 e incluso 30+. Junto a U. Autónoma y USACH,
+    conforman las instituciones con mayor proporción de estudiantes de trayectoria no lineal:
+    quienes trabajaron antes de estudiar, retomaron estudios truncados, o simplemente llegaron
+    más tarde a la universidad. Este perfil plantea desafíos pedagógicos distintos —estudiantes
+    que concilian trabajo y estudio, que llegan con mayor madurez pero también con más restricciones—
+    y sugiere la necesidad de modelos de acompañamiento adaptados a esa realidad.
+  </script>
+  <script id="50" type="text/x-typescript">
+    (() => {
+      const dataPlot = _.chain(dataGrupoEdad)
+        .orderBy(d => d.año)
+        .filter(d => d.año == selectAño )
+        .map(d => {
+          const record = {}
+          record.año = d.año;
+          record.ie = d.ie;
+          record.total_ingresos = d.total_ingresos;
+
+          record.grupo_edad = `${d.grupo_edad.trim()}`
+          return record
+
+        })
+        .value()
+
+      //return dataPlot
+      return Plot.plot({
+        title: "Ingresos por grupo de edad",
+        width,
+        marginLeft:90,
+        color:{
+          legend:true,
+          domain:["< 18","18–20", "21–24", "25–29", "30+"],
+          range:_.concat(d3.schemeTableau10[7],d3.schemeTableau10.slice(0,10))
+        },
+        x:{
+          type:"linear",
+          tickFormat:"%",
+        },
+        y:{
+          type:"band",
+          domain:_.chain(dataPlot).map(d => d.ie).uniq().value()
+
+                //domain:[0,1]
+
+        },
+      marks:[
+        //Plot.ruleX([0.5]),
+        //Plot.ruleY([0.5]),
+      Plot.barX(dataPlot,{
+              offset: "normalize",
+
+          y:"ie",
+          x:d => d["total_ingresos"],
+          fill:d => d["grupo_edad"].trim(),
+        order:["< 18","18–20", "21–24", "25–29", "30+"]
+        }),
+
+      ]
+    })
+    })()
+  </script>
+  <script id="59" type="text/markdown">
+    ## ¿Desde dónde llegan? Las rutas de entrada a la universidad
+
+    No todos los estudiantes llegan a la universidad por el camino directo desde el colegio.
+    Este gráfico descompone cada ingreso según su trayectoria previa, revelando que detrás
+    de los números de matrícula hay historias muy distintas.
+
+    **El camino directo domina, pero no es universal.** En la mayoría de las universidades,
+    entre el 50% y el 65% de los ingresos proviene de estudiantes que llegaron directamente
+    desde educación media, sin pasos intermedios. UAI y U. de Los Andes lideran esta categoría
+    (~60–65%), coherente con su perfil de estudiantes más jóvenes. En el extremo opuesto,
+    UAB registra solo un 30% de ingreso directo —el más bajo del grupo—, confirmando su rol
+    como universidad de trayectorias no lineales.
+
+    **El "gap sin ES previa" revela una demanda diferida.** La franja amarilla representa
+    estudiantes que tomaron tiempo entre el colegio y la universidad sin pasar por otra
+    institución de educación superior: trabajaron, postularon varias veces, o simplemente
+    demoraron la decisión. Este segmento es especialmente grande en UAB, U. Autónoma y UDP,
+    lo que sugiere que estas instituciones capturan una demanda que el sistema no absorbió
+    en el momento del egreso de EM.
+
+    **Movilidad entre instituciones: UDP y USACH destacan por razones distintas.** UDP tiene
+    una proporción llamativa de estudiantes que llegan desde otra institución (~25%), lo que
+    podría indicar que funciona como destino de "segunda vuelta" para quienes no completaron
+    estudios en otra parte. USACH, en cambio, sobresale por el tamaño de su segmento de
+    cambio interno (verde agua): muchos estudiantes se reubican entre carreras dentro de la
+    misma universidad, reflejo probable de sus programas de plan común y bachillerato.
+
+    **El origen no determinado no es ruido.** La franja verde oscura agrupa a estudiantes
+    sin registro en los datos de egreso de educación media —personas que ingresaron sin un
+    NEM trazable. Es especialmente visible en UAB y U. Autónoma, y no debe interpretarse
+    como error de datos: en muchos casos representa adultos que completaron su escolaridad
+    por vías no convencionales o en períodos con menor cobertura de registros.
+  </script>
+  <script id="52" type="text/x-typescript">
+    (() => {
+      const dataPlot = _.chain(dataOrigen_)
+        .orderBy(d => d.año)
+        .filter(d => d.año == selectAño )
+        .map(d => {
+          const record = {}
+          record.año = d.año;
+          record.ie = d.ie;
+          record.total_ingresos = d.total_ingresos;
+
+          record.origen = `${d.origen.trim()}`
+          return record
+
+        })
+        .value()
+
+      //return dataPlot
+      return Plot.plot({
+        title: "Ingresos según origen",
+        width,
+        marginLeft:90,
+        color:{
+          legend:true,
+          domain:["Directo desde EM","Gap, sin ES previa", "Otra institución", "Cambio interno", "Origen no determinado"],
+          range:d3.schemeTableau10
+        },
+        x:{
+          type:"linear",
+          tickFormat:"%",
+          //domain:[0,1]
+        },
+        y:{
+          type:"band",
+          domain:_.chain(dataPlot).map(d => d.ie).uniq().value()
+
+                //domain:[0,1]
+
+        },
+      marks:[
+        //Plot.ruleX([0.5]),
+        //Plot.ruleY([0.5]),
+      Plot.barX(dataPlot,{
+              offset: "normalize",
+
+          y:"ie",
+          x:d => d["total_ingresos"],
+          fill:d => d["origen"].trim(),
+        order:["Directo desde EM","Gap, sin ES previa", "Otra institución", "Cambio interno", "Origen no determinado"]
+        }),
+
+      ]
+    })
+    })()
+  </script>
+  <script id="67" type="text/markdown" hidden="">
+    ## Datos base para análisis
+  </script>
+  <script id="21" type="application/sql" hidden="" database="duckdb" output="data_">
+    WITH
+    cohorte as (
+      (SELECT *, 'UDP' as ie
+      FROM "../Datos por IES/3/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UAB' as ie
+      FROM "../Datos por IES/20/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UAI' as ie
+      FROM "../Datos por IES/23/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UAUTONOMA' as ie
+      FROM "../Datos por IES/31/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UANDES' as ie
+      FROM "../Datos por IES/34/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UDD' as ie
+      FROM "../Datos por IES/45/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UCHILE' as ie
+      FROM "../Datos por IES/70/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'USACH' as ie
+      FROM "../Datos por IES/71/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UFRO' as ie
+      FROM "../Datos por IES/76/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'PUC' as ie
+      FROM "../Datos por IES/86/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UDEC' as ie
+      FROM "../Datos por IES/87/datos_analisis/cohorte_ingreso.parquet")
+      UNION
+      (SELECT *, 'UAUSTRAL' as ie
+      FROM "../Datos por IES/90/datos_analisis/cohorte_ingreso.parquet")
+
+    ),
+
+    base AS (
+      SELECT *
+      FROM cohorte
+      WHERE nivel_global = 'Pregrado'
+        AND COALESCE(es_bach_plan_comun, 0) = 0
+        AND COALESCE(es_continuidad_plan_comun, 0) = 0
+        AND n_episodio = 1
+    ),
+
+    clasificado AS (
+      SELECT *,
+        CASE
+          WHEN tenia_matricula_previa_ie = 1                                        THEN 'Otra institución'
+          WHEN es_primer_ingreso_ie = 0 AND COALESCE(tenia_matricula_previa_ie,0)=0 THEN 'Cambio interno'
+          WHEN ingreso_directo = 1                                                  THEN 'Directo desde EM'
+          WHEN ingreso_directo = 0 AND n_anios_previos_es = 0                       THEN 'Gap, sin ES previa'
+          ELSE 'Origen no determinado'
+        END AS origen,
+        CASE gen_alu WHEN 1 THEN 'Hombre' WHEN 2 THEN 'Mujer' ELSE 'Sin dato' END AS sexo,
+        CASE
+          WHEN edad_al_ingreso < 18              THEN '< 18'
+          WHEN edad_al_ingreso BETWEEN 18 AND 20 THEN '18–20'
+          WHEN edad_al_ingreso BETWEEN 21 AND 24 THEN '21–24'
+          WHEN edad_al_ingreso BETWEEN 25 AND 29 THEN '25–29'
+          WHEN edad_al_ingreso >= 30             THEN '30+'
+          ELSE 'Sin dato'
+        END AS grupo_edad
+      FROM base
+    )
+    SELECT
+      primer_anio_obs                                                         AS anio,
+      origen,
+      sexo,
+      grupo_edad,
+      ie,
+      -- SEP
+      SUM(CASE WHEN prioritario_alguna_vez = 1 THEN 1 ELSE 0 END)            AS n_prioritario,
+      SUM(CASE WHEN preferente_alguna_vez  = 1 THEN 1 ELSE 0 END)            AS n_preferente,
+      -- NEM
+      SUM(CASE WHEN decil_1_3 = 1 THEN 1 ELSE 0 END)                        AS n_decil_1_3,
+      SUM(CASE WHEN top_10    = 1 THEN 1 ELSE 0 END)                        AS n_top_10,
+      COUNT(*)                                                                AS n_ingresos
+    FROM clasificado
+    GROUP BY 1, 2, 3, 4, 5
+    ORDER BY 1, 2, 3, 4, 5;
+  </script>
+  <script id="66" type="text/markdown" hidden="">
+    ## DB integrada
+  </script>
+  <script id="26" type="module" hidden="">
+    const db = await DuckDBClient.of({ data_ })
+  </script>
+  <script id="64" type="text/markdown">
+    ## Data Ingresos
+  </script>
+  <script id="53" type="application/sql" database="var:db" output="dataIngresos">
+    SELECT anio as año,ie,
+      SUM(n_ingresos) AS total_ingresos
+      FROM data_
+      GROUP BY anio, ie
+      ORDER BY anio,total_ingresos DESC
+  </script>
+  <script id="63" type="text/markdown">
+    ## Data Prioritario
+  </script>
+  <script id="39" type="application/sql" database="var:db" output="dataPrioritario">
+    SELECT anio as año,ie,
+      SUM(n_ingresos) AS total_ingresos,
+      SUM(n_prioritario) AS n_prioritario,
+      SUM(n_prioritario) / SUM(n_ingresos) AS porc_prioritario
+      FROM data_
+      GROUP BY anio, ie
+      ORDER BY anio,total_ingresos DESC
+  </script>
+  <script id="62" type="text/markdown">
+    ## Data prioritario / decil
+  </script>
+  <script id="41" type="application/sql" database="var:db" output="dataPrioritarioDecil">
+    SELECT anio as año,ie,
+      SUM(n_ingresos) AS total_ingresos,
+      SUM(n_decil_1_3) AS n_decil_1_3,
+      SUM(n_decil_1_3) / SUM(n_ingresos) AS porc_decil_1_3,
+        SUM(n_prioritario) AS n_prioritario,
+      SUM(n_prioritario) / SUM(n_ingresos) AS porc_prioritario
+
+      FROM data_
+      GROUP BY anio, ie
+      ORDER BY anio,total_ingresos DESC
+  </script>
+  <script id="61" type="text/markdown">
+    ## Data Grupo Edad
+  </script>
+  <script id="48" type="application/sql" database="var:db" output="dataGrupoEdad">
+    SELECT
+      anio AS año,
+      grupo_edad,
+      ie,
+      SUM(n_ingresos) AS total_ingresos,
+      SUM(SUM(n_ingresos)) OVER (PARTITION BY anio, ie) AS total_anio_ie,
+      ROUND( SUM(n_ingresos) / SUM(SUM(n_ingresos)) OVER (PARTITION BY anio, ie), 1) AS porc_grupo_edad
+    FROM data_
+    GROUP BY anio, grupo_edad, ie
+    ORDER BY anio, ie, total_ingresos DESC
+  </script>
+  <script id="60" type="text/markdown">
+    ## Data origen
+  </script>
+  <script id="51" type="application/sql" database="var:db" output="dataOrigen_">
+    SELECT
+      anio AS año,
+      origen,
+      ie,
+      SUM(n_ingresos) AS total_ingresos,
+      SUM(SUM(n_ingresos)) OVER (PARTITION BY anio, ie) AS total_anio_ie,
+      ROUND( SUM(n_ingresos) / SUM(SUM(n_ingresos)) OVER (PARTITION BY anio, ie), 1) AS porc_origen
+    FROM data_
+    GROUP BY anio, origen, ie
+    ORDER BY anio, ie, total_ingresos DESC
+  </script>
+  <script id="68" type="text/markdown">
+    ## Data Matricula Pregrado
+  </script>
+  <script id="14" type="application/sql" hidden="" database="duckdb" output="data_matricula_pregrado">
+    (SELECT cat_periodo,
+      'Universidad de Chile' as ie,
+      count(*) as estudiantes
+    FROM "../Datos por IES/70/Matricula_Ed_Superior_70.parquet"
+      WHERE cod_inst = 70 AND nivel_global = 'Pregrado'
+    GROUP BY cat_periodo
+    ORDER BY cat_periodo)
+
+    UNION
+
+    (SELECT cat_periodo,
+      'Pontificia Universidad Católica de Chile' as ie,
+      count(*) as estudiantes
+    FROM "../Datos por IES/86/Matricula_Ed_Superior_86.parquet"
+      WHERE cod_inst = 86 AND nivel_global = 'Pregrado'
+    GROUP BY cat_periodo
+    ORDER BY cat_periodo)
+
+    UNION
+
+    (SELECT cat_periodo,
+      'Universidad Adolfo Ibáñez' as ie,
+      count(*) as estudiantes
+    FROM "../Datos por IES/23/Matricula_Ed_Superior_23.parquet"
+      WHERE cod_inst = 23 AND nivel_global = 'Pregrado'
+    GROUP BY cat_periodo
+    ORDER BY cat_periodo)
+
+      UNION
+
+    (SELECT cat_periodo,
+      'Universidad de Los Andes' as ie,
+      count(*) as estudiantes
+    FROM "../Datos por IES/34/Matricula_Ed_Superior_34.parquet"
+      WHERE cod_inst = 34 AND nivel_global = 'Pregrado'
+    GROUP BY cat_periodo
+    ORDER BY cat_periodo)
+
+      UNION
+
+    (SELECT cat_periodo,
+      'Universidad del Desarrollo' as ie,
+      count(*) as estudiantes
+    FROM "../Datos por IES/45/Matricula_Ed_Superior_45.parquet"
+      WHERE cod_inst = 45 AND nivel_global = 'Pregrado'
+    GROUP BY cat_periodo
+    ORDER BY cat_periodo)
+  </script>
+  <script id="13" type="text/x-typescript" pinned="">
+    (() => {
+      const dataPlot = _.chain(data_matricula_pregrado)
+        .orderBy(d => d.cat_periodo)
+        .value()
+      return Plot.plot({
+        title: "Evolución de Matrícula de Pregrado",
+        width,
+        marginRight:150,
+        y:{
+          type:"log"
+        },
+      marks:[
+        Plot.lineY(dataPlot,{
+          x:"cat_periodo",
+          y:"estudiantes",
+          stroke:"ie"
+        }),    Plot.dot(dataPlot,{
+          x:"cat_periodo",
+          y:"estudiantes",
+          fill:"ie"
+        }),
+        Plot.text(dataPlot,Plot.selectLast({
+          x:"cat_periodo",
+          y:"estudiantes",
+          z:"ie",
+          textAnchor:"start",
+          dx:5,
+          text:"ie"
+        }))
+      ]
+    })
+    })()
+  </script>
+  <script id="46" type="module" hidden="">
+    function Scrubber(values, {
+      format = value => value,
+      initial = 0,
+      delay = null,
+      autoplay = true,
+      loop = true,
+      loopDelay = null,
+      alternate = false
+    } = {}) {
+      values = Array.from(values);
+      const form = html`<form style="font:12px var(--sans-serif);display:flex;align-items:center;gap:8px;">
+        <button name=b type=button style="width:5em;font-size:1em;cursor:pointer;"></button>
+        <label style="display:flex;align-items:center;gap:4px;">
+          <input name=i type=range min=0 max=${values.length - 1} value=${initial} step=1 style="width:180px;">
+          <output name=o style="font-variant-numeric:tabular-nums;min-width:3em;text-align:right;"></output>
+        </label>
+      </form>`;
+      let frame = null;
+      let timer = null;
+      let interval = null;
+      let direction = 1;
+      function start() {
+        form.b.textContent = "Pause";
+        if (delay === null) frame = requestAnimationFrame(tick);
+        else interval = setInterval(tick, delay);
+      }
+      function stop() {
+        form.b.textContent = "Play";
+        if (frame !== null) cancelAnimationFrame(frame), frame = null;
+        if (timer !== null) clearTimeout(timer), timer = null;
+        if (interval !== null) clearInterval(interval), interval = null;
+      }
+      function running() {
+        return frame !== null || timer !== null || interval !== null;
+      }
+      function tick() {
+        if (delay === null) frame = requestAnimationFrame(tick);
+        if (form.i.valueAsNumber === (direction > 0 ? values.length - 1 : direction < 0 ? 0 : NaN)) {
+          if (!loop) return stop();
+          if (alternate) direction = -direction;
+          if (loopDelay !== null) {
+            if (frame !== null) cancelAnimationFrame(frame), frame = null;
+            if (interval !== null) clearInterval(interval), interval = null;
+            timer = setTimeout(() => (step(), start()), loopDelay);
+            return;
+          }
+        }
+        step();
+      }
+      function step() {
+        form.i.valueAsNumber = (form.i.valueAsNumber + direction + values.length) % values.length;
+        form.i.dispatchEvent(new CustomEvent("input", {bubbles: true}));
+      }
+      form.i.oninput = event => {
+        if (event && event.isTrusted && running()) stop();
+        form.value = values[form.i.valueAsNumber];
+        form.o.value = format(form.value, form.i.valueAsNumber, values);
+      };
+      form.b.onclick = () => {
+        if (running()) return stop();
+        direction = alternate && form.i.valueAsNumber === values.length - 1 ? -1 : 1;
+        form.i.valueAsNumber = (form.i.valueAsNumber + direction + values.length) % values.length;
+        form.i.dispatchEvent(new CustomEvent("input", {bubbles: true}));
+        start();
+      };
+      form.i.oninput();
+      if (autoplay) start();
+      else stop();
+      Inputs.disposal(form).then(stop);
+      return form;
+    }
+  </script>
+</notebook>

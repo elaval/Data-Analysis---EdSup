@@ -1,0 +1,30 @@
+{
+  "cod_inst": 34,
+  "inst_key": "34",
+  "display_name": "UNIVERSIDAD DE LOS ANDES",
+  "extracted_at": "2026-04-27T16:15:42.575509",
+  "elapsed_seconds": 21.1,
+  "students_count": 70267,
+  "output_dir": "Datos por IES/34",
+  "datasets": {
+    "titulados_es": {
+      "record_count": 59772,
+      "files_with_data": 9,
+      "output_file": "Datos por IES/34/Titulados_ES_34.parquet",
+      "output_files": []
+    }
+  },
+  "source_files": {
+    "titulados_es": [
+      "Datos parquet/Titulados ES/titulados_es_2015.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2016.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2017.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2018.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2019.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2020.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2021.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2022.parquet",
+      "Datos parquet/Titulados ES/titulados_es_2023.parquet"
+    ]
+  }
+}
